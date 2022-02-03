@@ -1,0 +1,11 @@
+Convention de nommage
+
+Commit : feat	Introduction d’une nouvelle feature (fonctionnalité)
+         fix	Correction d’une erreur (bug)
+         docs	Modification de la documentation uniquement
+         style	Changement qui n’affecte pas la signification du code (espace, formatage, points-virgules manquants, etc.)
+         refactor	Changement de code qui ne corrige pas d’erreur et n’ajoute pas de fonctionnalité
+
+Branch : branches de bases : develop, master
+         feature/Nom
+         fix/Nom 

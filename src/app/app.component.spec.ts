@@ -30,6 +30,6 @@ describe('AppComponent', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.getElementsByClassName('.toolbar')[0].textContent).toContain('Welcome to the Car Rental!');
+    expect(compiled.getElementsByClassName('toolbar')[0].textContent).toContain('Welcome to the Car Rental!');
   });
 });

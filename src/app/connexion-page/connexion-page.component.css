@@ -36,3 +36,18 @@ input[type=submit]:hover {
     color: #53af57;
     border: 1px solid #53af57;
 }
+
+a{
+    background-color: #53af57;
+    color: white;
+    padding: 5px 10px;
+    margin: 8px 0px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+}
+a:hover {
+    background-color: white;
+    color: #53af57;
+    border: 1px solid #53af57;
+}

@@ -10,7 +10,7 @@ export class CarListComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    loadCars(new URL("http://localhost:8080/api/v1/vehicles"));
+    loadCars("http://localhost:8080/api/v1/vehicles");
   }
 }
 
@@ -27,7 +27,7 @@ interface CarInterface {
 }
 
 /** Return table of all cars if success; otherwise it will return undefined and call alert */
-function loadCars(theURL: URL): void {
+function loadCars(theURL: string): void {
     const xhr = new XMLHttpRequest();
 
     xhr.open("GET", theURL, true);

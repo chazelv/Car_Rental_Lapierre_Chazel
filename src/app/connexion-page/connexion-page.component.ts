@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { NgForm } from '@angular/forms';
+import { Utilisateur } from '../models/utilisateur.ts';
+import { AuthentificationService } from '../services/authentification.service';
 
 @Component({
   selector: 'app-connexion-page',
@@ -7,9 +10,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ConnexionPageComponent implements OnInit {
 
-  constructor() { }
-
-  ngOnInit(): void {
+  public utilisateur = new Utilisateur();
+    public value: any;
+    hide = true
+  
+    constructor(private authentification: AuthentificationService) { }
+  
+    ngOnInit(): void {
+    }
+  
+    async onSubmit(form: NgForm) {
+      this.authentification.authentification(form.value.login, form.value.pwd);
   }
-
 }
+
+

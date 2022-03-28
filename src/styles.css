@@ -1,1 +1,45 @@
 /* You can add global styles to this file, and also import other style files */
+
+html, body { 
+    height: 100%; 
+    background-color: #fff;
+}
+
+body { 
+    margin: 0; 
+    font-family: Roboto, "Helvetica Neue", sans-serif; 
+}
+
+.logoReturn {
+    color: rgba(0, 0, 0, 0.87);
+}
+
+
+.innerCenter {
+    max-width: 1170px;
+    width: 100%;
+    min-height: 100vh;
+    display: block;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 40px;
+}
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 30px;
+}
+
+    thead > *{
+        border: 1px solid #343A40;
+        padding: 5px;
+    }
+
+    tbody tr > * {
+        border: 1px solid #343A40;
+        padding: 5px;
+    }
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

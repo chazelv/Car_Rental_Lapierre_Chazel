@@ -1,7 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { NgForm } from '@angular/forms';
 import { Utilisateur } from '../models/utilisateur';
 import { AuthentificationService } from '../services/authentification.service';
+
 
 @Component({
   selector: 'app-connexion-page',
@@ -23,5 +24,4 @@ export class ConnexionPageComponent implements OnInit {
       this.authentification.authentification(form.value.login, form.value.pwd);
   }
 }
-
 
